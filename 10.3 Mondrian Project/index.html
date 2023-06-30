@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mondrian Project</title>
+        <style>
+            /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 320px 198px 153px 50px;
+                grid-template-rows: 414px 131px 155px 20px;
+                gap: 9px;
+                background-color: black;
+                height: 748px;
+                width: 748px;
+            }
+
+            .first-red {
+                background-color: red;
+            }
+
+            .second-white {
+                background-color: #f0f1ec;
+                grid-column-start: span 3;
+            }
+            .third-white {
+                background-color: #f0f1ec;
+                grid-column-start: span 1;
+                grid-row-start: span 2;
+                order: 0;
+            }
+            .fourth-white {
+                background-color: #f0f1ec;
+                grid-column-start: span 2;
+                grid-row-start: span 2;
+            }
+
+            .fourth-blue {
+                background-color: #004592;
+                height: 130px;
+                border-bottom: 1px solid black;
+            }
+
+            .fifth-white {
+                background-color: #f0f1ec;
+                grid-row-start: span 2;
+            }
+
+            .sixth-white {
+                background-color: #f0f1ec;
+            }
+
+            .seventh-yellow {
+                background-color: #f9d01e;
+            }
+            .eighth-black {
+                background-color: #232629;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Write your HTML here -->
+        <div class="container">
+            <div class="first-red"></div>
+            <div class="second-white"></div>
+            <div class="third-white"></div>
+            <div class="fourth-white"></div>
+            <div class="fourth-blue"></div>
+            <div class="fifth-white"></div>
+            <div class="sixth-white"></div>
+            <div class="seventh-yellow"></div>
+            <div class="eighth-black"></div>
+        </div>
+    </body>
+</html>
